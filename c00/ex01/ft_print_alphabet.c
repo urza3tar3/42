@@ -1,14 +1,16 @@
 #include <unistd.h>
+#include <stdio.h>
 
-void ft_print_alphabet(void) {
-	    char ch;
-	        for (ch = 'a'; ch <= 'z'; ch++) {
-			        write(1, &ch, 1);
-				    }
+void	ft_print_alphabet(void)
+{
+	char	chst;
+	char	chend;
+
+	chst = 'a';
+	chend = 'z';
+	while (chst <= chend)
+	{
+		write (1, &chst, 1);
+		++chst;
+	}
 }
-
-int main() {
-	    ft_print_alphabet();
-	        return 0;
-}
-

@@ -11,17 +11,20 @@
 /* ************************************************************************** */
 #include <stdio.h>
 #include <unistd.h>
+
 void	ft_is_negative(int n)
 {
+	char	n;
+	char	p;
+
 	if (n < 0)
 	{
-		char	N;
-		N = 'N'; 
-		write	(1, &N ,1);
+		n = 'N';
+		write(1, &n, 1);
 	}
-	else {
-		char	p;
+	else
+	{
 		p = 'P';
-		write	(1, &p ,1);
+		write(1, &p, 1);
 	}
 }
